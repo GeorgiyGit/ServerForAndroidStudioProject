@@ -35,6 +35,7 @@ namespace Application.Controllers
 		[HttpGet]
 		[Route("users-seeder")]
 		//Generate 5 users without images and get it. Only for testing
+		//Робити сідер для ролей не зовсім раціонально, тому що тоді пропаде сенс від ресурса UserRoles в Core.Help_elements
 		public async Task<IActionResult> UsersSeeder()
 		{
 			List<UserSignUpDTO> newUsers = new List<UserSignUpDTO>()
